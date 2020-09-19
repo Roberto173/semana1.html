@@ -3,10 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio6_Proporciones</title>
+    <title>Ejercicio6_Proporciones_Pantalla</title>
+    <style>
+        @media (max-width: 600px) {
+        #contenido {
+            width: 100%;
+            background-color:red;
+        }
+        #recomendaciones {
+            width: 100%;
+            background-color:red;
+        }
+        }
+        @media (min-width: 600px) and (max-width: 800px){
+        #contenido {
+            width: 60%;
+            background-color:darkgreen;
+        }
+        #recomendaciones {
+            width: 30%;
+            background-color:blue;
+        }
+        }
+    </style>
 </head>
 <body>
-    <header>
+    <div id="contenido">
         <h1>CONTENIDO ADAPTADO A LAS DIMENSIONES DE PANTALLA</h1>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
            Doloribus excepturi soluta ipsam eum molestiae! Porro incidunt
@@ -17,8 +39,8 @@
            maxime, dolorum minus ab ullam, vero commodi officia 
            voluptas alias sequi in at.
         </p>
-    </header>
-    <main>
+    </div>
+    <div id="recomendaciones">
         <h2>Lecturas recomendadas:</h2>
             <ul>
                 <li>1984</li>
