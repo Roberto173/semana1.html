@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox3</title>
+    <style>
+        #padre {
+            display: flex;
+            background: violet;
+            width: 100%;
+            margin: 20px auto;
+            height: 300px;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #texto {
+            background: violet;
+            width: 70%;
+            margin: 1% auto;
+            height: 70%;
+        }
+        #hijo {
+            display: flex;
+            flex-direction:column;
+            background: greenyellow;
+            color: violet;
+            width: 20%;
+            height: 70%;
+            margin: 2%;
+            border-radius: 5px;
+            align-content: center;
+            text-align: center;
+        }
+    </style>
+</head>
+    <body>
+        <div id="padre">
+          <div id="texto">
+            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing.</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus molestiae illum ipsam odio.
+               Iste blanditiis officiis nobis consectetur maiores. Qui cumque, vitae vero voluptatem 
+               delectus sunt facere fugit magni ad?lorem. Lorem ipsum, dolor sit amet consectetur adipisicing 
+               elit. Aliquid, amet! Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, dolor! Lorem 
+               ipsum dolor sit amet consectetur adipisicing elit. Illo, nam.
+            </p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus molestiae illum ipsam odio.
+                Iste blanditiis officiis nobis consectetur maiores. Qui cumque, vitae vero voluptatem 
+                delectus sunt facere fugit magni ad?lorem. Lorem ipsum, dolor sit amet consectetur adipisicing 
+                elit. Aliquid, amet! Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, dolor! Lorem 
+                ipsum dolor sit amet consectetur adipisicing elit. Illo, nam.</p>
+          </div>
+          <div id="hijo">
+              <h4>Recomendaciones</h4>
+                  <p>El resplandor</p>
+                  <p>Harry Potter</p>
+                  <p>Indiana Jones</p>
+          </div>
+        </div>
+    </body>
+</html>

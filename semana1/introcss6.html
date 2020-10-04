@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@531&display=swap" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio6_Proporciones_Pantalla</title>
+    <style>
+        @media (max-width: 600px) {
+        #contenido {
+            width: 100%;
+            background-color:red;
+            font-family: 'Indie Flower', cursive; 
+        }
+        #recomendaciones {
+            width: 100%;
+            background-color:red;
+            font-family: 'Grenze Gotisch', cursive;
+        }
+        .tamañotexto {
+            font-size: 11px;
+        }
+        }
+        @media (min-width: 600px) and (max-width: 800px){
+        #contenido {
+            width: 60%;
+            background-color:darkgreen;
+            font-family: 'Indie Flower', cursive;
+        }
+        #recomendaciones {
+            width: 30%;
+            background-color:blue;
+            font-family: 'Grenze Gotisch', cursive;
+        }
+        .tamañotexto {
+            font-size: 12px;
+        }
+        }
+        @media (min-width: 800px) {
+        #contenido {
+            width: 80%;
+            background-color: violet;
+            font-family: 'Indie Flower', cursive;
+        }
+        #recomendaciones {
+            width: 15%;
+            background-color: yellow;
+            font-family: 'Grenze Gotisch', cursive;
+        }
+        .tamañotexto {
+            font-size: 14px;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div id="contenido">
+        <h1 class="tamañotexto">CONTENIDO ADAPTADO A LAS DIMENSIONES DE PANTALLA</h1>
+        <p class="tamañotexto">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+           Doloribus excepturi soluta ipsam eum molestiae! Porro incidunt
+           harum, cumque saepe et excepturi vero sunt omnis tempore? 
+           Provident in maxime doloremque adipisci?Lorem ipsum dolor 
+           sit amet consectetur adipisicing elit. Eius ea blanditiis 
+           consequatur numquam quae quibusdam necessitatibus ipsa, 
+           maxime, dolorum minus ab ullam, vero commodi officia 
+           voluptas alias sequi in at.
+        </p>
+    </div>
+    <div id="recomendaciones">
+        <h2 class="tamañotexto">Lecturas recomendadas:</h2>
+            <ul>
+                <li class="tamañotexto">1984</li>
+                <li class="tamañotexto">Un mundo perfecto</li>
+                <li class="tamañotexto">El hombre en el castillo</li>
+            </ul>
+    </main>
+</body>
+</html>

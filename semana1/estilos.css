@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.padre {
+    background: violet;
+    width: 80%;
+    margin: 20px auto;
+    height: 600px;
+    display: flex;
+}
+
+.hijo {
+    background: coral;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
