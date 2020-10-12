@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba y error</title>
+    
+</head>
+<body>
+   <div id="contenedor">
+    <div id="barraMenu"> 
+        <select id="nuestrasCervezas" content="listadoCervezas()" onchange="mostrarInfoCerveza()">
+            <option>Elige cualquiera de nuestras cervezas</option>
+        </select>
+        <button id="miFavorita" onclick="guardarDatos()">Guardar en Favoritos</button>
+        <button id="recuperarDatos" onclick="recuperarDatos()">Recuperar Favoritos</button>
+    </div>  
+    <div id="cerveza"></div>    
+    </div>
+
+ 
+ 
+    <script src="./index.js"></script>   
+
+
+
+
+</body>
+</html>

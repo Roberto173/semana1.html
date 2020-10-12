@@ -1,0 +1,31 @@
+
+
+
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f6f6f6;
+}
+
+.container {
+    width: 500px;
+    height: 300px;
+    background-color: url(http://lorempixel.com/500/300);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container p {
+    margin: 0;
+    width: 90%;
+    text-align: center;
+}

@@ -1,0 +1,7 @@
+.container {
+    display: flex;
+    border: 5px solid #ffcc5c;
+    list-style: none;
+    flex-wrap: wrap;
+    }
+
