@@ -1,0 +1,90 @@
+.container {
+    display: flex;
+    background-color: lightgrey;
+    width: 90%;
+    flex-wrap: wrap;
+    margin-left: 5%;
+    justify-content: center;
+}
+
+h1 {
+    align-self: center;
+    width: 90%;
+    text-align: center;
+    font-size: 50px;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+#subTitle {
+    align-self: center;
+    font-size: 16px;
+    width: 90%;
+    text-align: center;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: lightgrey;
+    width: 100%;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#survey-form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#name-label {
+    display: flex;
+    padding: 5px;
+}
+
+#name {
+    padding: 5px;
+}
+
+#email-label {
+    display: flex;
+    padding: 5px;
+}
+
+#email {
+    padding: 5px;
+}
+
+#number-label {
+    display: flex;
+    padding: 5px;
+}
+
+#number {
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+#dropdown {
+    padding: 5px;
+}
+
+#citizen {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+#european {
+    border: dotted red;
+    padding: 5px;
+    border-bottom: 5px;
+}

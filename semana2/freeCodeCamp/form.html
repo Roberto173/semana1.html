@@ -1,0 +1,86 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet"  href="style.css"/> 
+</head>
+<body>
+    <fieldset class="container">
+        <header>
+            <h1 id="title">Form</h1>
+            <p id="description">Se trata de un ejercicio para desarrollar un formulario y aplicar los conocimientos adquiridos</p>
+         </header>
+    <body>
+        <main>
+            <form id="survey-form">
+              <label id="name-label" for="name">Name:</label>
+              <input type="text" required id="name" name="user_name" placeholder="name">
+              <label id="email-label" for="email">e-mail:</label>
+              <input type="email" required pattern="@" oninvalid="it must be a valid email address" id="email" placeholder="email address">
+              <label id="number-label" for="number">Telephone Number:</label>
+              <input type="number" required min="9" max="12" pattern=[0-9] oninvalid="introduzca un número de teléfono válido" id="number" placeholder="phone number">
+              <label id="dropdown" for="dropdown">Sex</label>
+              <select id="dropdown" name="Sexo">
+                <option value="M">Male</option>
+                <option value="F">Female</option>
+              </select>
+              <div id="citizen">
+                <p>Where are you from?</p>
+              <label for="european">European Citizen</label>
+              <input type="radio" id="european" value="attribute">
+                <select name="country">
+                  <option value="1">Spain</option>
+                  <option value="2">Germany</option>
+                  <option value="3">France</option>
+                </select>
+              <label for="attribute">Not European Citizen</label>
+              <input type="radio" id="attribute" value="attribute">
+                <select name="country">
+                  <option value="1">US</option>
+                  <option value="2">China</option>
+                  <option value="3">Russia</option>
+                </select>
+              </div>
+
+             <fieldset>
+                <legend>Have you lived here for more than 5 years?</legend>
+
+                <input id="live1" name="live" type="radio"/>
+                <label for="live1">Yes</label>
+
+                <input id="live2" name="live" type="radio"/>
+                 <label for="live2">No</label>
+               
+               <legend>Is the property within 1 Km of a school?</legend>
+
+                <input id="live1" name="live" type="radio"/>
+                <label for="live1">Yes</label>
+
+                <input id="live2" name="live" type="radio"/>
+                 <label for="live2">No</label>
+               
+              </fieldset>
+             
+              <div id="check">
+                <label for="vehicle1">Gasoline</label>
+                <input type="checkbox" id="vehicle1" Value="Gasoline">
+                <label for="vehicle2">Hybrid</label>
+                <input type="checkbox" id="vehicle2" Value="Hybrid">
+                <label for="vehicle3">Electric</label>
+                <input type="checkbox" id="vehicle3" Value="Electric">
+              </div>  
+  
+               <textarea id="comment">Enter text here...</textarea>
+              <input id="submit" type="submit">
+          </form>
+                </label>
+        </main>
+    </body>
+        
+    </div>
+</body>
+</html>

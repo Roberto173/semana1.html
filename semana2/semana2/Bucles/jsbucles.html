@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+    
+
+  
+
+<script>
+
+
+    /*ejercicio 1
+
+    let edad = parseInt(window.prompt(`Introduza su edad:`));
+    console.log(edad);
+    let i = 0;
+    while (i < edad) {
+        console.log(`Feliz cumpleaños`);
+        i++;
+    } */
+
+
+
+    /*ejercicio 2
+
+    let numero = parseInt(window.prompt(`Introduzca hasta qué numero quiere sumar: `));
+    let i = 0;
+    let suma = 0;
+    while (i <= numero) {
+        suma += i;
+        i++;
+        console.log (suma);
+    }*/
+    
+
+    /*ejercicio 3
+
+    for (let i = 10 ; i <= 20 ; i++) {
+        console.log(i);
+        console.log(' ');
+    }*/
+
+
+
+    /*ejercicio 4     
+
+    let suma = 0;
+
+    for (let i = 1 ; i < 10 ; i++) {
+        
+        let valor = parseInt(window.prompt (`Introduzca un valor: `));
+        suma = suma + valor;
+        }
+
+    let media = parseInt(suma / 10);
+    console.log(media);  */
+
+    
+
+    /* Ejercicio 5
+
+    let numero;
+    let suma = 0;
+
+    do {
+        numero = parseInt(window.prompt(`Introduzca hasta qué numero quiere sumar: `));
+        for (let i = 1 ; i < 1 ; i++)  {
+            suma = suma + i;
+            console.log(suma);
+        }
+    }   
+    while (num !== 0);  */
+
+
+    /*  Ejercicio 6 --- MAL
+
+    let factorial = 1 ;
+    let contador = 0 ;
+
+    for (let i = 1 ; i < 11 ; i++) {
+
+        factorial *= i;
+        contador = i;
+        console.log(`El factorial de ${contador}  es ${factorial}`);
+        console.log(" ");
+    }  */
+
+
+/* EJERCICIO 6 CLASE
+
+    //Declaramos una variable. Y como sabemos que la querremos multiplicar, le damos el valor de 1
+let suma = 1;
+
+//hacemos un bucle for. Este bucle se repetirá hasta que i sea mayor que 10
+for (let i = 1; i <= 10; i++) {
+  //multiplicamos suma * i
+  suma = suma * i;
+  //Sacamos en consola el resultado
+  console.log(`${i} es ${suma}`);
+}
+
+
+    /* ejercicio 7 --- MAL ---
+
+
+    let valor = parseInt(window.prompt(`Introduzca un valor:`));
+    let suma = 0;
+
+    if (valor < 0) {
+        console.log(`Los números negativos no se consideran`);
+    }
+    else if (valor > 0) {
+        do {
+        suma = suma + valor;
+        console.log(suma);
+        }
+    }
+
+*/
+
+/* EJERCICIO 7
+
+
+//declaramos la variable valor. Al no asignarle ningun valor será undefined en vez de 0 la primera vez que pase por el bucle while
+
+let valor;
+
+//declaramos la variable sumaValores y le damos el valor de 0
+let sumaValores = 0;
+
+//El bucle while se repetirá mientras valor sea diferente a 0
+while (valor !== 0) {
+  //igualamos valor a lo que introduzca el usuario
+  valor = parseInt(window.prompt("Escribe un número"));
+  //si valor es menor a 0 entramos en el if
+  if (valor < 0) {
+    //y sacamos en consola que el número es negativo
+    console.log("Es un número negativo");
+
+    //si el valor no es menor a 0 entramos en el else
+  } else {
+    //sumaValores es igual a sumaValores + valor (introducido por el usuario)
+    sumaValores = sumaValores + valor;
+  }
+}*/
+
+//Sacamos en consola el resultado
+console.log(`La suma es ${sumaValores}`);
+
+
+    /*Ejercicio 8 --- MAL, MAL, MAL ---
+
+    let I;
+    let P;
+    let opcion = window.prompt(`Por favor, elija P o I:`);
+    console.log(opcion);
+    let impares;
+    let pares;
+    let c;
+    let d;
+
+        
+        if (opcion === I) {
+           
+            for (let c = 1 ; c <= 100 ; c + 2); {
+            impares = c;
+            console.log (impares);
+            console.log (" ");
+            }
+        }   
+        else if (opcion === P) {
+
+        for (let d = 2 ; d <= 100 ; d + 2); {
+        pares = d;
+        console.log (pares);
+        console.log (" ");
+            }
+        }
+
+        else if (opcion !== P) {
+            window.alert(`Por favor, rescriba P o I`);
+        }
+
+        else if (opcion !== I) {
+            window.alert(`Por favor, reescriba P o I`);
+        } */
+
+/*EJERCICIO 8 --- CLASE
+
+
+//le decimos al usuario que introduzca P o I y lo guardamos en una variable
+let valor = window.prompt("Escribe P o I").toLowerCase();
+//creamos la variable num y le damos el valor 0
+let num = 0;
+
+//el bucle while se repetirá mientras valor no sea ni "p" ni "i"
+while (valor !== "p" && valor !== "i") {
+  //al no ser valor igual a p ni a i
+  //sacamos otro prompt diciendo que el valor es incorrecto y que vuelva a seleccionar
+  //igualamos valor a lo que introduzca el usuario
+  valor = window
+    .prompt("Ese valor es incorrecto. Seleccione de nuevo P o I")
+    .toLowerCase();
+}
+
+//si valor es "p"
+if (valor === "p") {
+  num = 2;
+  //si valor es "i"
+} else if (valor === "i") {
+  num = 1;
+}
+//el bucle for se repetirá mientras i sea menor a 51
+for (let i = 1; i < 51; i++) {
+  //sacamos en consola el valor de num
+  console.log(num);
+  //y depués le sumamos 2 a num.
+  num = num + 2;
+} */
+
+
+
+
+
+        /* ejercicio 9 */
+
+        
+        let impar = 0;
+        let i = 0;
+        let cuadrado = 0;
+
+        for (let i = 1 ; i = 11 ; i + 2) {
+            impar = i;
+            console.log(impar);
+            cuadrado = impar * impar;
+            console.log(cuadrado);
+        }
+
+//EJERCICIO 9 --- CLASE
+
+//el bucle for se repetirá mientras i sea menor que 13
+//ya que i empieza con el valor 1, la condición es que i sea menor que 13 (osea, 12 máximo)
+//y el ejercicio nos pide que saquemos 12 números con su cubo si es par y su cuadrado si es impar
+for (let i = 1; i < 13; i++) {
+  //si el resto de dividir i / 2 no es 0 entramos en el if ya que i es impar
+  if (i % 2 !== 0) {
+    //sacamos en consola el resultado
+    console.log(`El cuadrado de ${i} es ${i * i}`);
+    //si el resto de dividir i / 2 es 0 entramos en el else ya que i es par
+  } else {
+    //sacamos el resultado en la consola
+    console.log(`El cubo de ${i} es igual a ${i * i * i}`);
+  }
+}
+
+//EJERCICIO 10  --- CLASE
+
+//declaramos la variable resto y la igualamos a 0
+let resto = 0;
+
+//el bucle for se va a repetir siempre que i sea menor O igual a 100
+for (let i = 1; i <= 100; i++) {
+  //a resto le damos el valor del resto que da dividir i / 5
+  resto = i % 5;
+  //si resto no es igual a 0 (o lo que es lo mismo. Si i no es multiplo de 5)
+  //entramos al if
+  if (resto !== 0) {
+    //sacamos en consola el valor de i
+    console.log(i);
+  }
+}
+
+//El CODIGO DE ARRIBA Y EL DE ABAJO HACEN LO MISMO
+
+//el bucle for se va a repetir siempre que i sea menor O igual a 100
+for (let i = 1; i <= 100; i++) {
+  //si el resto de dividir i entre 5 no es 0 (es decir, i no es multiplo de 5)entramos en el if
+  if (i % 5 !== 0) {
+    //sacamos en consola el valor de i
+    console.log(i);
+  }
+}
+
+
+//EJERCICIO 11 CLASE
+
+
+//declaramos la variable num y no le damos ningun valor
+
+let num;
+
+//declaramos la variable numInvertido y le damos el valor de un string vacio ("")
+let numInvertido = "";
+
+//en el bucle do va a entrar la primera vez. Y seguirá entrando en el mientras
+//la condición de su while (el de abajo del todo) sea true
+//es decir, mientras num  no sea igual a "0"
+do {
+  //igualamos la variable num a lo que nos introduzca el usuario
+  num = window.prompt("escribe una cifra");
+  //declaramos la variable x y le damos el valor de num.length (o la largura del string que contiene num)
+  let x = num.length;
+  //en el bucle while se repetirá mientras x sea mayor o igual a 0
+  while (x >= 0) {
+    //igualamos el valor de numInvertido a la suma entre numInvertido + el substring entre x-1 y x (cada vuelta del while)
+    numInvertido = numInvertido + num.substring(x - 1, x);
+
+    //a x le restamos 1 (cada vuelta del while)
+    x--;
+  }
+  //sacamos en consola la variable numInvertido
+  console.log(numInvertido);
+  //reseteamos numInvertido (le damos el valor original) para que no se sumen el resto de numeros que introduzca el usuario
+  numInvertido = "";
+} while (num !== "0");
+
+
+
+// EJERCICIO 13 --- CLASE
+
+//declaramos las variables dia, mes anyo, sumaFecha, total y total1 sin asignarles ningún valor
+//declaramos las variables x e y y las igualamos a 0
+let dia;
+let mes;
+let anyo;
+let sumaFecha;
+let total;
+let total1;
+let x = 0;
+let y = 0;
+
+//le preguntamos al usuario su dia, mes y año de nacimiento
+dia = parseInt(window.prompt("Escribe tu día de nacimiento"));
+mes = parseInt(window.prompt("Escribe tu mes de nacimiento"));
+anyo = parseInt(window.prompt("Escribe tu año de nacimiento"));
+
+
+//sumamos dia + mes + anyo y al igualarlo a sumaFecha lo pasamos a string
+sumaFecha = (dia + mes + anyo).toString();
+
+
+//en el bucle do siempre se entra al menos una vez. Y en este se seguirá entrando
+//mientras la condición del while que está abajo se cumpla
+//es decir mientras y no sea igual a 1
+do {
+    //igualamos x a la largura del string sumaFecha
+  x = sumaFecha.length;
+  //igualamos total a 0
+  total = 0;
+  //entramos al while mientras x sea mayor que 0. Más arriba hemos igualado 
+  //x a la largura del string sumaFecha
+  while (x > 0) {
+      //cogemos la subcadena o substring de sumaFecha que va desde la posición x -1 hasta x
+      //y lo parseamos para convertirlo en un número entero
+    total1 = parseInt(sumaFecha.substring(x - 1, x));
+    //igualamos total total parseado.
+    total = parseInt(total);
+
+    //total pasa a ser = a total + total1
+    total = total + total1;
+    //le quitamos 1 a x. Si x es 0 saldrá del bucle, si no seguirá en él.
+    x--;
+  }
+  //sumaFecha pasa a ser = que total pasado a string
+  sumaFecha = total.toString();
+  //a y le damos el valor de sumaFecha.lenght (la largura del string que contiene sumaFecha)
+  y = sumaFecha.length;
+  //si la largura del string que contiene sumaFecha es 1 y sería 1 y saldríamos del bucle do. Si no lo volveríamos a repetir hasta que y sea 1
+} while (y !== 1);
+
+//sacamos en pantalla el número de la suerte
+console.log(`Tu número de la suerte es ${total}`);
+
+
+
+
+        
+</script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <div id="div1" style="color:red" style="background-color: mediumaquamarine"></div>
+    <div id="div2" style="color:grey" style="background-color: mediumturquoise"></div>
+    <div id="div3" style="color:indianred" style="background-color: mintcream"></div>
+    <div id="div4" style="color:orange" style="background-color: moccasin"></div>
+    <div id="div5" style="color:maroon" style="background-color: navajowhite"></div>
+
+
+
+    <script>
+
+        let num1=parseInt(window.prompt(`Introduzca un número:`));
+        let num2=parseInt(window.prompt(`Introduzca otro número:`));
+        let div1 = document.getElementById("div1");
+        let div2 = document.getElementById("div2");
+        let div3 = document.getElementById("div3");
+        let div4 = document.getElementById("div4");
+        let div5 = document.getElementById("div5");
+
+        let suma = parseInt(num1 + num2);
+        let resta = parseInt(num1 - num2);
+        let multiplicacion = parseInt(num1 * num2);
+        let division = parseInt(num1 / num2);
+        let resto = parseInt(num1 % num2);
+        div1.innerHTML=`<h1>Suma = ${suma}<h1>`;
+        div2.innerHTML=`<h2>Resta = ${resta}<h2>`;
+        div3.innerHTML=`<h2>Multiplicación = ${multiplicacion}<h3>`;
+        div4.innerHTML=`<h2>División = ${division}<h4>`;
+        div5.innerHTML=`<h2>Resto = ${resto}<h5>`;
+
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        /*ejercicio 1
+        let num1 = window.prompt ('Introduzca el primer número: ');
+        let num2 = window.prompt ('Introduzca el segundo número: ');
+        numero1 = parseInt (num1);
+        numero2 = parseInt (num2);
+        suma = numero1 + numero2;
+        resta = numero1 - numero2;
+        producto = numero1 * numero2;
+        if (numero1<numero2) {
+            console.log ('suma es: ' , suma , 'resta es: ' , resta , 'producto es: ' , producto , 'mayor es: ' , num2 , 'menor es: ' , num1);
+        }
+        else {
+            console.log ('suma es: ' , suma , 'resta es: ' , resta , 'producto es: ' , producto , 'mayor es: ' , num1 , 'menor es: ' , num2);
+        }*/
+
+
+
+
+
+
+
+
+        /*ejercicio 2
+        let edad = window.prompt ('¿Qué edad tienes: ');
+        if (edad <=8) {
+            console.log ('Pasa al tobogán');
+        }
+        else {
+            console.log ('Lo siento, pero eres demasiado mayor para ir al tobogán');
+        }*/
+
+
+
+
+
+
+
+
+
+        /*ejercicio3
+        let numero1 = parseInt(window.prompt ('Introduzca el primer número: '));
+        let numero2 = parseInt(window.prompt ('Introduzca el segundo número: '));
+        let numero3 = parseInt(window.prompt ('Introduzca el tercer número: '));
+        suma = numero1 + numero2;
+            if (suma === numero3) {
+                console.log (numero1 , "+" , numero2 , " es igual a " , numero3);
+                }
+            else {
+                console.log (numero1 , "+" , numero2 , "no es igual a" , numero3);
+            }*/
+
+
+
+
+
+
+
+        /*ejercicio4
+        let numero1 = parseInt(window.prompt ('Introduzca un número: '));
+        let numero2 = parseInt(window.prompt ('Introduzca un número: '));
+        let numero3 = parseInt(window.prompt ('Introduzca un número: '));
+            if (numero1 === numero2 -20) {
+                console.log ('el primer número tiene una diferencia de 20 con el segundo');
+            }
+            else if (numero1 === numero2 - 20) {
+                console.log ('el primer número tiene una diferencia de 20 con el tercero');
+            }
+            if (numero2 === numero3 - 20) {
+                console.log ('el segundo número tiene una diferencia de 20 con el tercero')
+            }*/
+        
+
+
+
+
+
+
+        /*ejercicio 5a - con el comando switch
+
+        let dia = window.prompt ('Introduzca el día de la semana, en minúsculas: ');
+        
+        switch(dia) {
+            case 'lunes':
+                window.alert(`Hoy es lunes`);
+                break;
+            case 'martes':
+                window.alert(`Hoy es martes`);
+                break;
+            case 'miércoles':
+                window.alert(`Hoy es miércoles`);
+                break;
+            case 'jueves':
+                window.alert(`Hoy es jueves`);
+                break;
+            case 'viernes':
+                window.alert(`Hoy es viernes`);
+                break;
+            case 'sábado':
+                window.alert(`Es fin de semana`);
+                break;
+            case 'domingo':
+                window.alert(`Es fin de semana`);
+                break;
+            default:
+                window.alert(`Por favor, revise el día que ha escrito. No lo reconozco`);
+        }*/
+
+
+
+
+
+
+
+        /*ejercicio 5b - con el comando if/else if
+        let dia = window.prompt ('Introduzca el día de la semana, en minúsculas:');
+            if (dia.equals(lunes)) {
+                console.log(`Hoy es lunes`);
+            }*/
+
+
+
+
+
+
+
+        /*ejercicio6
+        let numero = parseInt(window.prompt('Introduzca un número: '));
+        if (numero !== 1) {
+            cuadrado = numero * numero;
+            cubo = cuadrado * numero;
+            console.log (`cuadrado: ${cuadrado} cubo: ${cubo}`);
+        }*/
+
+
+
+
+
+
+
+        /*ejercicio 7
+        let numerador=parseInt(window.prompt('Introduzca el numerador: '));
+        let denominador=parseInt(window.prompt('Introduzca el denominador'));
+        if (denominador !== 0) {
+            fraccion = numerador / denominador;
+            console.log (`el resultado de la división es ${fraccion}`);
+        }
+        else {
+            console.log (`no se puede dividir entre cero`);
+        }*/
+        
+
+
+
+
+
+
+        /*ejercicio 8
+        let numuno=parseInt(window.prompt('Introduzca un número: '));
+        let numdos=parseInt(window.prompt('Introduzca un número: '));
+        if (numuno < numdos) {
+            console.log (`${numuno} es menor que ${numdos}`);
+        }
+        else if (numuno > numdos) {
+            console.log (`${numuno} es mayor que ${numdos}`);
+        }
+        else if (numuno === numdos){
+            console.log (`${numuno} es igual a ${numdos}`);
+        }*/
+
+
+
+
+
+
+
+
+        /*EJERCICIO 9 
+        
+        let temperatura=parseInt(window.prompt('Introduzca la temperatura en ºC: '));
+        console.log(temperatura);
+        
+        if (temperatura >= 40) {
+            window.alert('Váyase a otro lugar')
+        }
+        else if (temperatura>=30) {
+            window.alert('Encienda el aire acondicionado');
+        }
+        else if (temperatura>=20) {
+            window.alert('No hagas nada');
+        }
+        else if (temperatura>=10) {
+            window.alert('Encienda la calefacción');
+        }
+        else if (temperatura < 10) {
+            window.alert('Váyase a otro sitio'); 
+        }*/
+
+
+
+
+        /*EJERCICIO 10 - MAL - REPASAR - NO EJECUTA EL "IF ELSE IF"*/
+        let num1=parseInt(window.prompt('Introduzca un número (número 1): '));
+        let num2=parseInt(window.prompt('Introduzca otro número (número 2): '));
+        var resta = num1 - num2;
+        console.log (resta);
+        var resto1 = num1 % 6;
+        console.log (resto1);
+        var resto2 = num2 % 6;
+        console.log (resto2);
+       
+        if (resta = 0) {
+            console.log(`0`);
+        }
+        else if (resta > 0 && resto1 === resto2) {
+            console.log(`El número más pequeño es ${num2}`);
+        }
+        else if (resta < 0 && resto1 === resto2) {
+            console.log(`El número más pequeño es ${num1}`);
+        }
+        else if (resta > 0 && resto1 !== resto2) {
+            console.log(`El mayor número de los dos es ${num1}`);
+        }
+        else if (resta < 0 && resto1 !== resto2) {
+            console.log(`El mayor número de los dos es ${num2}`);
+        }
+
+
+
+
+        /*EJERCICIO 11 
+        let num1=window.prompt('Introduzca un número entre 25 y 75: ');
+        let num2=window.prompt('Introduzca otro número entre 25 y 75: ');
+        uno = num1.substring(0,1);
+        dos = num1.substring(1,2);
+        tres = num2.substring(0,1);
+        cuatro = num2.substring(1,2);
+        if (uno===tres) {
+            console.log(`ambos números comparten el primer dígito`);
+        }
+        else if(uno===cuatro) {
+            console.log(`ambos números comparten un dígito`);
+        }
+        else if(dos===tres) {
+            console.log(`ambos números comparten un dígito`);
+        }
+        else if(dos===cuatro) {
+            console.log(`ambos números comparten el último dígito`);
+        }*/
+
+
+
+
+
+
+
+
+
+
+        /*Ejercicio 12
+
+
+        /*ejercicio 12 - parte 1
+
+        let resultado=parseInt(window.prompt(`Introduzca, en números, el puesto en el que finalizó la carrera`));
+        
+        switch (resultado) {
+
+        case (resultado=1):
+            window.alert(`Ganaste`);
+            brake;
+        default:
+            window.alert(`Lo importante es participar`);
+        }*/
+        
+
+
+
+
+        /*ejercicio 12 - parte 2
+
+        let resultado=parseInt(window.prompt(`Introduzca, en números, el puesto en el que finalizó la carrera`));
+        if (resultado===1) {
+            console.log(`Medalla de oro`);
+        }
+        else if (resultado===2) {
+            console.log(`Medalla de plata`);
+        }
+        else if (resultado===3) {
+            console.log(`Medalla de bronce`);
+        }
+        else if (resultado>=4) {
+            console.log(`Lo importante es participar`);
+        }*/
+
+
+
+
+
+
+        /* ejercicio 12 - parte 3
+
+        let resultado=parseInt(window.prompt(`Introduzca, en números, el puesto en el que finalizó la carrera`));
+        
+        switch (resultado) {
+
+        case (resultado=1):
+            window.alert(`Medalla de oro`);
+            brake;
+        case (resultado=2):
+            window.alert(`Medalla de plata`);
+            brake;
+        case (resultado=3):
+            window.alert(`Medalla de bronce`);
+            brake;
+        default:
+            window.alert(`Lo importante es participar`);
+        }*/
+
+
+
+
+
+
+        /*ejercicio 12 - parte 4
+
+        let resultado=parseInt(window.prompt(`Introduzca, en números, el puesto en el que finalizó la carrera`));
+        
+        if (resultado<=3) {
+            console.log(`Sube al podium`);
+        }
+        else {
+            console.log(`Se acabó la carrera`);
+        }*/
+
+
+
+
+
+        /*Ejercicio 17
+
+        let frase = window.prompt ('Introduzca una frase:');
+        let longitud = parseInt(frase.length);
+        console.log(longitud);
+        let mitad = parseInt(longitud / 2);
+        console.log(mitad);
+        let par = parseInt(longitud % 2);
+        console.log(par);
+
+        if (par===0) {
+            let caracteres=frase.substring((mitad-1), (mitad+1));
+            console.log(caracteres);
+        }
+        else {
+            let caracter=frase.substring(mitad , (mitad+1));
+            console.log(caracter);
+        }*/
+
+
+
+
+
+
+
+        /*Ejercicio 18 (fecha)... Trampa
+
+        let dia = window.prompt(`Introduzca, en números, el día de la fecha de hoy`);
+        let mes = window.prompt(`Ahora escriba el mes en el que estamos`);
+        let anio = window.prompt (`Por último, introduza el año en el que estamos`);
+        console.log(dia , mes , anio);*/
+
+
+
+
+
+        /*ejercicio 19
+        var precio = 2;
+        let cantidad = parseInt(window.prompt(`¿Cuántos helados quiere comprar?`));
+        if (cantidad<0) {
+            console.log(`La cantidad introducida no es correcta`);
+        }
+        else if (cantidad>10) {
+            let oferta = (cantidad - 1) * precio;
+            console.log(`Ha comprado ${cantidad} helados. El precio son ${oferta} €, incluyendo 1 helado gratis por haber comprado más de 10 unidades`);
+        }
+        else if (cantidad<=10) {
+            let importe = cantidad * precio;
+            console.log(`Ha comprado ${cantidad} helados. El precio son ${importe} €`);
+        }*/
+        
+
+
+
+
+
+
+
+
+        /*Ejercicio 20a
+        var opcion1 = 'costa';
+        var opcion2 = 'interior';
+        var opcion3 = 'quedarse en casa';
+
+        let menu = parseInt(window.prompt(`Elija una de las siguientes opciones para su tiempo de vacaciones:
+                1.- ${opcion1}
+                2.- ${opcion2}
+                3.- ${opcion3}`));
+
+        if (menu === 1) {
+            console.log(`Ha elegido usted  la ${opcion1} para pasar su tiempo de vacaciones`);
+        }
+        else if (menu === 2) {
+            console.log(`Ha elegido usted el ${opcion2} para pasar su tiempo de vacaciones`);
+        }
+        else if (menu === 3) {
+            console.log(`Ha elegido usted ${opcion3} para pasar su tiempo de vacaciones`);
+        }*/
+
+
+
+
+
+
+
+        /*Ejercicio 20b
+
+        let menu = parseInt(window.prompt(`Elija una de las siguientes opciones para su tiempo de vacaciones:
+                1.- costa
+                2.- interior
+                3.- quedarse en casa`));
+        
+        switch (menu) {
+
+        case (menu=1):
+            window.alert(`Ha elegido usted la costa para su tiempo de vacaciones`);
+            brake;
+        case (menu=2):
+            window.alert(`Ha elegido usted el interior para su tiempo de vacaciones`);
+            brake;
+        case (menu=3):
+            window.alert(`Ha elegido usted quedarse en casa para su tiempo de vacaciones`);
+            brake;
+        default:
+            window.alert(`Opción incorrecta`);
+        }*/
+
+
+
+
+
+
+        /*ejercicio 21
+        let num1 = parseInt(window.prompt(`Introduzca el número que desee:`));
+        let num2 = parseInt(window.prompt(`Introduzca un segundo número:`));
+        let num3 = parseInt(window.prompt(`Introduzca el tercer número:`));
+
+        if (num1 === num2 && num2 === num3) {
+            console.log(`Los tres números son iguales`);
+        }
+        else if (num1 > num2 && num1 > num3) {
+            console.log(`El número mayor de los tres es: ${num1}`);
+        }
+        else if (num1 > num2 && num1 < num3) {
+            console.log (`El número mayor de los tres es: ${num3}`);
+        }
+        else if (num1 < num2 && num2 > num3) {
+            console.log(`El número mayor de los tres es: ${num2}`);
+        }
+        else if (num1 < num2 && num2 < num3) {
+            console.log (`El número mayor de los tres es: ${num3}`);
+        }
+        else if (num2 > num3 && num2 < num1) {
+            console.log(`El número mayor de los tres es: ${num1}`);
+        }
+        else if (num2 < num3 && num1 < num2) {
+            console.log (`El número mayor de los tres es: ${num3}`);
+        }*/
+
+
+
+
+
+
+
+        /*Ejercicio 22
+        let num1 = parseInt(window.prompt(`Introduzca el número que desee:`));
+        let num2 = parseInt(window.prompt(`Introduzca un segundo número:`));
+        let num3 = parseInt(window.prompt(`Introduzca el tercer número:`));
+
+        if (num1 === num2 && num2 === num3) {
+            console.log(`Los tres números son iguales`);
+        }
+        else if (num1 < num2 && num1 < num3) {
+            console.log(`El número menor de los tres es: ${num1}`);
+        }
+        else if (num1 < num2 && num1 > num3) {
+            console.log (`El número menor de los tres es: ${num3}`);
+        }
+        else if (num1 > num2 && num2 < num3) {
+            console.log(`El número menor de los tres es: ${num2}`);
+        }
+        else if (num1 > num2 && num2 > num3) {
+            console.log (`El número menor de los tres es: ${num3}`);
+        }
+        else if (num2 < num3 && num2 > num1) {
+            console.log(`El número menor de los tres es: ${num1}`);
+        }
+        else if (num2 > num3 && num1 > num2) {
+            console.log (`El número menor de los tres es: ${num3}`);
+        }*/
+
+
+
+
+        /*ejercicio 23
+        
+        let nota1 = parseInt(window.prompt(`Introduzca la nota del primer examen:`));
+        let nota2 = parseInt(window.prompt(`Introduzca la nota del segundo examen:`));
+        let nota3 = parseInt(window.prompt(`Introduzca la nota del tercer examen:`));
+        let mejornota = parseInt(nota1-nota2);
+        if (mejornota > 0) {
+            var notafinal = nota1 + nota3;
+            console.log(`La nota del primer examen es la mejor nota parcial. La nota final es: ${notafinal}`);
+        }
+        else {
+            var notafinal = nota2 + nota3;
+        } 
+
+        if (notafinal >= 0 && notafinal < 5){
+            window.alert(`Insuficiente`);
+        }
+        else if (notafinal >= 5 && notafinal < 6) {
+            window.alert(`Suficiente`);
+        }
+        else if (notafinal >= 6 && notafinal < 7) {
+            window.alert(`Bien`);
+        }
+        else if (notafinal >= 7 && notafinal < 9) {
+            window.alert(`Notable`);
+        }
+        else if (notafinal >= 9 && notafinal < 10) {
+            window.alert(`Sobresaliente`);
+        }
+        if (notafinal >= 10) {
+            window.alert(`Matrícula`);
+        }*/
+        
+        
+        
+
+
+
+        /*Ejercicio 24
+        let temperatura=parseInt(window.prompt(`Introduzca el valor de temperatura que desea convertir`));
+        let escala=window.prompt(`Indique a qué escala desea convertir esta temperatura:
+        C (Si desea º Centígrados)
+        F (si desea grados Fahrenheit)`);
+        
+        else if (escala === "C") {
+            let salidac = parseInt((temperatura-32) * 5 / 9);
+            console.log(`La temperatura en grados centígrados es ${salidac}`);
+        }
+        else if (escala === "F") {
+            let salidaf = parseInt(((temperatura * 9) / 5 ) + 32);
+            console.log(`La temperatura en grados Fahrenheit es ${salidaf}`);
+        }*/
+
+        /*Ejercicio 25
+        let nombre = window.prompt(`Introduzca su nombre`);
+        let ventas = parseInt(window.prompt(`Introduzca el importe de las ventas realizadas`));
+        if (ventas >= 500) {
+            let extra = ventas * 0.05;
+            console.log(`Enhorabuena ${nombre}, sus ventas has sido de ${ventas} € y le corresponde cobrar un extra de ${extra} €.`);
+        }
+        else {
+            console.log(`Sr./Sra. ${nombre}, sus ventas han sido de ${ventas} €.`);
+        }*/
+
+        
+
+
+
+
+
+
+
+
+       
+    </script>
+    
+</body>
+</html>
