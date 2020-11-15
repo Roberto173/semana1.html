@@ -1,0 +1,17 @@
+.main {
+    display: flex;
+    background-color: transparent;
+    background: url("https://www.come2work.com/wp-content/uploads/2013/02/Coworking.png");
+}
+
+#usuario {
+    background-color: transparent;
+}
+
+#datosSala {
+    background-color: transparent;
+}
+
+#datosPuesto {
+    background-color: transparent;
+}

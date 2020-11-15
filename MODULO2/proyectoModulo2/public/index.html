@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"  href="style.css"/> 
+</head>
+<body>
+    <main class="container">
+
+        <div id="usuario">
+            
+            <h3>¿Eres cliente?</h3>
+            <input type="text" id="cifUsuario" placeholder="CIF de la empresa" />
+            <button onclick="cliente()">Entrar</button>
+
+            <h3>¿No eres cliente? Date de alta</h3>
+            <input type="text" id="cif" placeholder="CIF de la empresa" />
+            <input type="text" id="empresa" placeholder="Nombre de la empresa" />
+            <input type="text" id="nombre" placeholder="Nombre" />
+            <input type="text" id="apellido" placeholder="Apellido" />
+            <input type="text" id="dni" placeholder="DNI" />
+            <button onclick="altaCliente()">Dar de alta</button>
+
+        </div>
+
+        <div id="datosSala">
+
+            <h3>¿Quieres reservar una sala múltiple?</h3>
+            <input type="text" id="cifUsuario" placeholder="CIF de la empresa" />
+            <input type="text" id="numSala" placeholder="Número de sala" />
+            <input type="date" id="fechaReserva" placeholder="Día para la reserva" />
+            <input type="time" id="horaEntrada" placeholder="Desde" />
+            <input type="time" id="horaFin" placeholder="Hasta" />
+            <button onclick="reservarSala()">Reservar Sala</button>
+
+        </div>
+
+        <div id="datosPuesto">
+
+            <h3>¿Quieres reservar un puesto individual?</h3>
+            <input type="text" id="cifUsuario" placeholder="CIF de la empresa" />
+            <input type="text" id="numSala" placeholder="Número de sala" />
+            <input type="date" id="fechaReserva" placeholder="Día para la reserva" />
+            <input type="time" id="horaEntrada" placeholder="Desde" />
+            <input type="time" id="horaFin" placeholder="Hasta" />
+            <button onclick="reservarPuesto()">Reservar Puesto</button>
+
+        </div>
+
+    </main>
+
+    <script src="./index.js"></script>
+</body>
+</html>
