@@ -9,7 +9,7 @@ app.use(express.json());
 const usuarios = require("./usuarios.js");
 const salas = require("./salas.js");
 const puestos = require("./puestos.js");
-const cocina = require("./cocina.js");
+const reservas = require("./reservas.js");
 
 const mongodb = require("mongodb");
 const MongoClient = mongodb.MongoClient;
@@ -29,6 +29,6 @@ MongoClient.connect("mongodb://127.0.0.1:27017", function (err, client){
 app.use("/coworking/usuarios", usuarios);
 app.use("/coworking/salas", salas);
 app.use("/coworking/puestos", puestos);
-app.use("/coworking/cocina", cocina);
+app.use("/coworking/reservas", reservas);
 
 app.listen(3000);

@@ -23,7 +23,7 @@ function altaCliente() {
         return res.json();
     }).then(function (data){
         console.log(data);
-        console.log("El cliente se ha registrado correctamente");
+        console.log(`El cliente se ha registrado correctamente`);
     });
 }
 
@@ -115,14 +115,60 @@ function modificarCliente() {
     });
 }
 
-
-
-
-
-
 function reservarSala() {
-    const horaEntrada = document.getElementById("horaEntrada").value;
+    
+    const horaEntrada = document.getElementById("horaComienzo").value;
     const horaFin = document.getElementById("horaFin").value;
     const sala = document.getElementById("numeroSala").value;
-    console.log(horaEntrada, horaFin, sala);
+    const fechaReserva = document.getElementById("fechaReserva").value;
+    const cif = document.getElementById("cifUsuarioSala").value;
+    console.log(sala, cif, fechaReserva, horaEntrada, horaFin);
+
+    const reservaSala = {
+        cif,
+        sala,
+        fechaReserva,
+        horaEntrada,
+        horaFin
+    };
+
+    fetch("/coworking/reservas/salas/editar", {
+        method: "PUT",
+        header: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify(reservaSala),
+    })
+        .then(function (res){
+            return res.json();
+        })
+        .then(function (data){
+            console.log(data);
+        });
+}
+
+function anularReservaSala() {
+    const sala = document.getElementById("numeroSala").value;
+    const fechaReserva = document.getElementById("fechaReserva").value;
+    const cif = document.getElementById("cifUsuarioSala").value;
+
+    const anularReservaSala = {
+        sala,
+        fechaReserva,
+        cif
+    };
+
+    fetch("/coworking/reservas/salas/baja", {
+        method: "DELETE",
+        header: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify(anularReservaSala),
+    })
+        .then(function (res){
+            return res.json();
+        })
+        .then(function (data){
+            console.log(data);
+        });
 }

@@ -58,63 +58,45 @@ Router.put("/editar", function (req, res){   //RUTA PARA EDITAR LA SALA
 Router.post("/reserva", function (req, res){  //RUTA PARA RESERVAR UNA SALA
     
     console.log(req.body);
-    let db = req.app.locals.db;
-    let cif = req.body.cif;
-    let numero = req.body.numero;
-    let fechaReserva = req.body.fechaReserva;
-    let horaComienzo = req.body.horaComienzo;
-    let horaFin = req.body.horaFin;
-    
-    db.collection("usuarios").find({cif: cif}).toArray(function (err, usuario){  //COMPROBAMOS SI EL USUARIO ESTÁ DADO DE ALTA
+    const db = req.app.locals.db;
+    const cif = req.body.cif;
+    const numero = req.body.numero;
+    const fechaReserva = req.body.fechaReserva;
+    const horaComienzo = req.body.horaComienzo;
+    const horaFin = req.body.horaFin;
+
+    const sala = {
+        cif,
+        numero,
+        fechaReserva,
+        horaComienzo,
+        horaFin
+    };
+    //VAMOS A BUSCAR USUARIO PARA SABER SI ESTÁ DADO DE ALTA
+    db.collection("usuarios").find({cif: cif}).toArray(function (err, usuario){
         if (err !== null) {
             res.send(err);
-        }
-        else {
-            if (usuario.length === 0){
-                res.send({mensaje: "El usuario no está registrado"});  //MENSAJE SI USUARIO NO ESTÁ DADO DE ALTA
+        }else {
+            if (usuario.length === 0) {
+                res.send({mensaje: "El usuario no está registrado"});  //SI NO ESTÁ REGISTRADO, MANDAMOS MENSAJE DE AVISO
             }
-            else {
-                db.collection("salas").find({numero: numero}).toArray(function(err, sala){  //SI USUARIO SÍ ESTÁ DADO DE ALTA, COMPROBAMOS ESTADO DE LA SALA
-                    if(err !== null){
+            else {    //SI ESTÁ REGISTRADO, BUSCAMOS LA FECHA SOLICITADA PARA LA RESERVA
+                db.collection("reservas").find({fechaReserva: fechaReserva}).toArray(function (err, sala){
+                    if (err !== null){
                         res.send(err);
-                    }
-                    else {
-                        if(salas[0].estado==="ocupada") {
-                            res.send({mensaje: "La sala no está disponible en esta fecha/horario"});
-                        }
-                        else {
-                            db.collection("salas").insertOne({numero: numero},
-                                                             {$set: {cif: cif,
-                                                                    fechaReserva: fechaReserva,
-                                                                    horaComienzo: horaComienzo,
-                                                                    horaFin: horaFin}},
-                                                             function (err, datos){
-                                if (err !== null) {
-                                    res.send(err);
-                                }
-                                 else  {
-                                    db.collection("salas").updateOne({numero: numero}, 
-                                                                      {$set: {estado: "Ocupada",
-                                                                              fechaReserva: fechaReserva,
-                                                                              horaComienzo: horaComienzo,
-                                                                              horaFin: horaFin}},
-                                                                              function (err,data){
-                                    if (err !== null) {
-                                        res.send(err);
-                                    }
-                                    else {
-                                        res.send({mensaje: "Reserva realizada"});
-                                    }
-                                    });    
-                                 }                          
-                             });
+                    }else {
+                        if (sala[0].fechaReserva === fechaReserva){ //SI LA FECHA SOLICITADA PARA LA RESERVA SE CORRESPONDE CON UNA FECHA QUE YA CONTIENE UNA RESERVA
+                            
                         }
                     }
-                });
+                })
             }
         }
-    });
+    })
+
 });
+       
+           
 
 
 module.exports = Router;

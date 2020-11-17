@@ -38,7 +38,7 @@
 
         <div id="datosSala">
 
-            <h3>¿Quieres reservar una sala múltiple?</h3>
+            <h3>¿Quieres reservar una sala múltiple? ¿Necesitas modificar/anular tu reserva?</h3>
             <select class="elegirSala" id="numeroSala" name="numeroSala">
                 <option value="">Selecciona la Sala</option>
                 <option value="1">Sala 1</option>
@@ -46,17 +46,18 @@
                 <option value="3">Sala 3</option>
             </select>
             <input type="text" id="cifUsuarioSala" placeholder="CIF de la empresa" />
-            <input type="text" id="numSala" placeholder="Número de sala" />
             <input type="date" id="fechaReserva" placeholder="Día para la reserva" />
-            <input type="time" id="horaEntrada" placeholder="Desde" />
+            <input type="time" id="horaComienzo" placeholder="Desde" />
             <input type="time" id="horaFin" placeholder="Hasta" />
             <button onclick="reservarSala()">Reservar Sala</button>
+            <button onclick="editarReservaSala()">Editar Reserva</button>
+            <button onclick="anularReservaSala()">Anular Reserva</button>
 
         </div>
 
         <div id="datosPuesto">
 
-            <h3>¿Quieres reservar un puesto individual?</h3>
+            <h3>¿Quieres reservar un puesto individual? ¿Deseas modificar/anular tu reserva?</h3>
             <select class="elegirPuesto" id="numeroPuesto" name="numeroPuesto">
                 <option value="">Selecciona el Puesto</option>
                 <option value="puesto1">Puesto 1</option>
@@ -71,11 +72,12 @@
                 <option value="puesto10">Puesto 10</option>
             </select>
             <input type="text" id="cifUsuarioPuesto" placeholder="CIF de la empresa" />
-            <input type="text" id="numPuesto" placeholder="Número de puesto" />
             <input type="date" id="fechaReserva" placeholder="Día para la reserva" />
             <input type="time" id="horaEntrada" placeholder="Desde" />
             <input type="time" id="horaFin" placeholder="Hasta" />
             <button onclick="reservarPuesto()">Reservar Puesto</button>
+            <button onclick="editarReservaPuesto()">Editar Reserva</button>
+            <button onclick="anularReservaPuesto()">Anular Reserva</button>
 
         </div>
 
