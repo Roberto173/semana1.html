@@ -53,9 +53,11 @@ Router.put("/editar", function (req, res){   //RUTA PARA EDITAR LA SALA
         }
     });
 });
-////////////////////////////////////////////////////////////////////
+
 
 Router.post("/reserva", function (req, res){  //RUTA PARA RESERVAR UNA SALA
+    
+    console.log(req.body);
     let db = req.app.locals.db;
     let cif = req.body.cif;
     let numero = req.body.numero;

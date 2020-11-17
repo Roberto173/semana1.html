@@ -4,31 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet"  href="style.css"/> 
+    <link rel="stylesheet"  href="./style.css"/> 
 </head>
 <body>
     <main class="container">
-
+        <div id="formularios">
         <div id="usuario">
             
             <h3>¿Eres cliente?</h3>
-            <input type="text" id="cifUsuario" placeholder="CIF de la empresa" />
+            <input type="text" id="cifUsuario" placeholder="Introduce el CIF" />
             <button onclick="cliente()">Entrar</button>
+            <div id="listadoClientes"></div>
 
             <h3>¿No eres cliente? Date de alta</h3>
-            <input type="text" id="cif" placeholder="CIF de la empresa" />
+            <input type="text" id="cif" placeholder="CIF" />
             <input type="text" id="empresa" placeholder="Nombre de la empresa" />
-            <input type="text" id="nombre" placeholder="Nombre" />
-            <input type="text" id="apellido" placeholder="Apellido" />
+            <input type="text" id="nombre" placeholder="Nombre Persona Contacto" />
+            <input type="text" id="apellido" placeholder="Apellido Persona Contacto" />
             <input type="text" id="dni" placeholder="DNI" />
-            <button onclick="altaCliente()">Dar de alta</button>
+            <button onclick="altaCliente()">Alta Nuevo Cliente</button>
+            <div id="mensajeAltaCliente"></div>
+
+            <h3>Para darte de baja o modificar la persona de contacto</h3>
+            <input type="text" id="cifBaja" placeholder="CIF" />
+            <input type="text" id="empresaBaja" placeholder="Empresa" />
+            <input type="text" id="nombreMod" placeholder="Nombre Persona Contacto" />
+            <input type="text" id="apellidoMod" placeholder="Apellido Persona Contacto" />
+            <input type="text" id="dniMod" placeholder="DNI" />
+            <button onclick="bajaCliente()">Baja Cliente</button>
+            <button onclick="modificarCliente()">Modificar Datos Cliente</button>
 
         </div>
 
         <div id="datosSala">
 
             <h3>¿Quieres reservar una sala múltiple?</h3>
-            <input type="text" id="cifUsuario" placeholder="CIF de la empresa" />
+            <select class="elegirSala" id="numeroSala" name="numeroSala">
+                <option value="">Selecciona la Sala</option>
+                <option value="1">Sala 1</option>
+                <option value="2">Sala 2</option>
+                <option value="3">Sala 3</option>
+            </select>
+            <input type="text" id="cifUsuarioSala" placeholder="CIF de la empresa" />
             <input type="text" id="numSala" placeholder="Número de sala" />
             <input type="date" id="fechaReserva" placeholder="Día para la reserva" />
             <input type="time" id="horaEntrada" placeholder="Desde" />
@@ -40,12 +57,27 @@
         <div id="datosPuesto">
 
             <h3>¿Quieres reservar un puesto individual?</h3>
-            <input type="text" id="cifUsuario" placeholder="CIF de la empresa" />
-            <input type="text" id="numSala" placeholder="Número de sala" />
+            <select class="elegirPuesto" id="numeroPuesto" name="numeroPuesto">
+                <option value="">Selecciona el Puesto</option>
+                <option value="puesto1">Puesto 1</option>
+                <option value="puesto2">Puesto 2</option>
+                <option value="puesto3">Puesto 3</option>
+                <option value="puesto4">Puesto 4</option>
+                <option value="puesto5">Puesto 5</option>
+                <option value="puesto6">Puesto 6</option>
+                <option value="puesto7">Puesto 7</option>
+                <option value="puesto8">Puesto 8</option>
+                <option value="puesto9">Puesto 9</option>
+                <option value="puesto10">Puesto 10</option>
+            </select>
+            <input type="text" id="cifUsuarioPuesto" placeholder="CIF de la empresa" />
+            <input type="text" id="numPuesto" placeholder="Número de puesto" />
             <input type="date" id="fechaReserva" placeholder="Día para la reserva" />
             <input type="time" id="horaEntrada" placeholder="Desde" />
             <input type="time" id="horaFin" placeholder="Hasta" />
             <button onclick="reservarPuesto()">Reservar Puesto</button>
+
+        </div>
 
         </div>
 

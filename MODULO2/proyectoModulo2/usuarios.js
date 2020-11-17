@@ -57,8 +57,8 @@ Router.put("/editar", function (req, res){   //RUTA PARA EDITAR AL USUARIO
 
 Router.delete("/baja", function (req, res){  //RUTA PARA DAR DE BAJA A UN USUARIO
     let db = req.app.locals.db;
-    let empresa = req.body.empresa;
-    db.collection("usuarios").deleteOne({empresa: empresa}, function (err, datos){
+    let cif = req.body.cif;
+    db.collection("usuarios").deleteOne({cif: cif}, function (err, datos){
         if (err !== null) {
             res.send (err);
         }
@@ -67,5 +67,8 @@ Router.delete("/baja", function (req, res){  //RUTA PARA DAR DE BAJA A UN USUARI
         }
     });
 });
+
+
+
 
 module.exports = Router;

@@ -1,17 +1,31 @@
-.main {
+.container {
+    margin: 0;
+    min-height: 100vh;
+    background-image: url("https://www.come2work.com/wp-content/uploads/2013/02/Coworking.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
     display: flex;
-    background-color: transparent;
-    background: url("https://www.come2work.com/wp-content/uploads/2013/02/Coworking.png");
+    justify-content: center;
+    align-items: center;
 }
 
-#usuario {
-    background-color: transparent;
+.container:before {
+    content: "";
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(#52c4df ,#ad55c1);
+    opacity: 0.3;
+    z-index: -1;
 }
 
-#datosSala {
-    background-color: transparent;
+h3 {
+    background-color: black;
+    color: white;
 }
 
-#datosPuesto {
-    background-color: transparent;
-}
